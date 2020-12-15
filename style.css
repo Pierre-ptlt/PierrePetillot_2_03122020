@@ -1,5 +1,35 @@
+body {
+    color: #F2F2F2;
+}
+
 .navMenu {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: row; /* met le menu sur une ligne */
+    align-items: center; /* place le menu au centre du header, en face du logo*/
+    justify-content: space-between;
+    margin-right: 9%;
 }
+
+.logo {
+    width: 75px;
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* met le logo à gauche et le menu à la fin */
+}
+
+.navItem {
+    margin-right: 9%; /* espacement des liens du nav menu */
+}
+
+#inscrire {
+    color: #0065FC ;
+}
+
+a {
+    text-decoration: none;
+}
+
+
