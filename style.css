@@ -1,5 +1,7 @@
 body {
     color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
 }
 
 .navMenu {
@@ -7,29 +9,38 @@ body {
     flex-direction: row; /* met le menu sur une ligne */
     align-items: center; /* place le menu au centre du header, en face du logo*/
     justify-content: space-between;
-    margin-right: 9%;
+    margin-right: 15%;
 }
 
 .logo {
     width: 75px;
     display: flex;
+    margin-left: 5%;
 }
 
 header {
     display: flex;
     justify-content: space-between; /* met le logo à gauche et le menu à la fin */
+    margin-top: 3%;
 }
 
 .navItem {
-    margin-right: 9%; /* espacement des liens du nav menu */
+    margin-right: 15%; /* espacement des liens du nav menu */
+    color: rgb(88, 86, 86);
+    font-weight: 700;
 }
 
 #inscrire {
     color: #0065FC ;
+    font-weight: 700;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #509ef7;
 }
 
 
