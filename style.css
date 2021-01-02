@@ -59,5 +59,46 @@ a:hover {
     color: rgb(100, 100, 100);
 }
 
+.searchBar {
+    margin-top: 25px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: baseline;
+}
+.mapIcon {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 36px;
+    height: 36px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire {
+    border: 0px;
+    height: 36px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    text-indent: 10px;
+}
+
+.butSearch {
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px;
+    width: 110px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
 
 
