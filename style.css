@@ -1,7 +1,11 @@
 body {
-    color: #F2F2F2;
+    background-color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
     font-size: small;
+}
+
+.general {
+    margin-left: 30px;
 }
 
 .navMenu {
@@ -15,7 +19,6 @@ body {
 .logo {
     width: 75px;
     display: flex;
-    margin-left: 5%;
 }
 
 header {
@@ -42,5 +45,19 @@ a {
 a:hover {
     color: #509ef7;
 }
+
+.recherche {
+    margin-top: 50px;
+}
+
+#recherchez {
+    font-weight: bolder;
+}
+
+#plein {
+    font-weight: 100;
+    color: rgb(100, 100, 100);
+}
+
 
 
