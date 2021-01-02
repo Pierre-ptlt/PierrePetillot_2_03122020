@@ -24,7 +24,7 @@ body {
 header {
     display: flex;
     justify-content: space-between; /* met le logo à gauche et le menu à la fin */
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .navItem {
@@ -87,6 +87,8 @@ a:hover {
 input::placeholder {
     font-family: 'Raleway', sans-serif;
     text-indent: 10px;
+    font-weight: 700;
+    color: black;
 }
 
 .butSearch {
@@ -100,5 +102,12 @@ input::placeholder {
     font-weight: bolder;
 }
 
+.filtres {
+    margin-top: 20px;
+    display: flex;
+}
 
+#filtre {
+    font-weight: 600;
+}
 
