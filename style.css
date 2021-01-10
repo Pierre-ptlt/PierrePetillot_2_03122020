@@ -37,10 +37,6 @@ header {
     font-weight: 700;
 }
 
-.navItem:hover {
-    border-top: #0065FC 1px solid;
-}
-
 #inscrire {
     color: #0065FC ;
     font-weight: 700;
@@ -245,6 +241,7 @@ button:focus {
     flex-direction: column;
     width: 200px;
     height: 180px;
+    box-shadow: 1px 1px 6px #555;
 }
 
 .photoMaison1 {
@@ -319,6 +316,7 @@ button:focus {
     margin-bottom: 44px;
     border-radius: 25px;
     display: flex;
+    box-shadow: 1px 1px 6px #555;
 }
 
 .photoPop {
@@ -386,6 +384,7 @@ button:focus {
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    box-shadow: 1px 1px 6px #555;
 }
 
 .acName {
@@ -410,6 +409,7 @@ button:focus {
     height: 280px;
     background-color: #ffffff;
     border-radius: 25px;
+    box-shadow: 1px 1px 6px #555;
 }
 
 .pomImg {
@@ -425,6 +425,7 @@ button:focus {
     margin-top: 20px;
     background-color: #ffffff;
     border-radius: 25px;
+    box-shadow: 1px 1px 6px #555;
 }
 
 .acImg {
@@ -447,6 +448,7 @@ button:focus {
     height: 230px;
     background-color: #ffffff;
     border-radius: 25px;
+    box-shadow: 1px 1px 4px #555;
 }
 
 .acImg3 {
@@ -455,4 +457,36 @@ button:focus {
     width: 300px;
     height: 170px;
     object-fit: cover;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(224, 223, 223); ;
+    margin-top: 100px;
+    width: 100%;
+    height: 230px;
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footTitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footerLink {
+    display: flex;
+    flex-direction: column;
+    color: rgb(88, 86, 86);
+    margin-top: 10px;
+}
+
+.footerBlank {
+    width: 230px;
 }
