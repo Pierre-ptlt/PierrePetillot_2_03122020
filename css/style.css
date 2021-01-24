@@ -8,6 +8,7 @@ body {
 .general {
     max-width: 1200px;
     margin: auto;
+    padding: 20px;
 }
 
 .navMenu {
@@ -15,7 +16,6 @@ body {
     flex-direction: row; /* met le menu sur une ligne */
     align-items: center; /* place le menu au centre du header, en face du logo*/
     justify-content: space-between;
-    margin-right: 15%;
 }
 
 .logo {
@@ -41,6 +41,10 @@ header {
     border-top: 2px solid transparent;
 }
 
+.navWrapper {
+    order: 1;
+}
+
 .navItem:hover {
     border-top: #0065FC solid 2px;
 }
@@ -50,6 +54,7 @@ header {
     font-weight: 700;
     margin-left: 30px;
     padding-right: 0px;
+    order: 2;
 }
 
 a {
@@ -223,15 +228,12 @@ button:focus {
 
 .layer1 {
     display: flex;
-    margin-right: 30px;
+    justify-content: space-between;
 }
 
 .layer2 {
     display: flex;
     flex-direction: column;
-    max-width: 870px;
-    width: 100%;
-    height: 550px;
     background-color: rgb(231, 228, 228);
     border-radius: 25px;
     padding: 30px;
@@ -297,14 +299,13 @@ button:focus {
 .layer3 {
     display: flex;
     background-color:rgb(231, 228, 228);
-    max-width: 330px;
-    width: 100%;
-    height: 550px;
     border-radius: 25px;
     margin-left: 30px;
+    min-width: 330px;
     flex-direction: column;
     padding: 30px;
 }
+
 
 .pop {
     display: flex;
@@ -323,10 +324,12 @@ button:focus {
     max-width: 320px;
     margin-bottom: 30px;
     width: 100%;
-    height: 120px;
+    min-width: 210px;
+    min-height: 120px;
     border-radius: 25px;
     display: flex;
     box-shadow: 1px 1px 6px #555;
+    padding: 0px;
 }
 
 .photoPop {
@@ -349,7 +352,6 @@ button:focus {
 .popName {
     font-weight: bolder;
     color: black;
-    font-size: 15px;
     margin-bottom: 0px;
 }
 
@@ -363,21 +365,24 @@ button:focus {
     margin-top: 15px;
 }
 
-.activités {
+.activites {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: -10px;
     margin-top: 30px;
 }
 
 .activities {
     display: flex;
     margin-top: 15px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: -15px;
 }
 
 .activi1 {
-    margin-left: 20px;
-    max-width: 300px;
+    margin: 10px;
+    max-width: 250px;
     width: 100%;
     height: 490px;
     border-radius: 25px;
@@ -385,7 +390,7 @@ button:focus {
 }
 
 .vieux {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: 430px;
     object-fit: cover;
@@ -403,17 +408,17 @@ button:focus {
 }
 
 .activi2 {
-    margin-left: 20px;
+    margin: 10px;
+    padding-right: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 300px;
-    width: 100%;
     height: 490px;
 }
 
 .pom {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: 280px;
     background-color: #ffffff;
@@ -430,7 +435,7 @@ button:focus {
 }
 
 .acItem {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: 190px;
     margin-top: 20px;
@@ -442,14 +447,14 @@ button:focus {
 .acImg {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: 130px;
     object-fit: cover;
 }
 
 .acItem3 {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: 230px;
     background-color: #ffffff;
@@ -460,7 +465,7 @@ button:focus {
 .acImg3 {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: 170px;
     object-fit: cover;
@@ -502,4 +507,38 @@ footer {
 
 .footerBlank {
     width: 30%;
+}
+
+@media only screen and (min-width: 689px) and (max-width: 920px)
+{
+    .layer1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .layer3 {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .popWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: -10px;
+    }
+
+    .popText {
+        margin: 0px;
+    }
+
+    .popBox {
+        margin-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 679px)
+{
+
 }
