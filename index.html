@@ -27,7 +27,7 @@
             <div class="recherche">
                 <div class="Intro">
                     <h3 class="recherchez">Trouvez votre hébergement pour des vacances de rêve</h3>
-                    <p id="plein">En plein centre-ville ou en pleine nature</p>
+                    <p class="plein">En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="searchBar">
                     <div class="mapIcon">
@@ -36,11 +36,15 @@
                     <form>
                         <input class="formulaire" type="text" placeholder="Marseille, France">
                     </form>
-                    <button class="butSearch">Rechercher</button>
+                    <button class="butSearch">
+                        <span class="showDesktop">Rechercher</span>
+                        <span class="showMobile"><i class="fas fa-search"></i></span>
+                    </button>
                 </div>
             </div>
             <div class="filtres">
-                <p id="filtre">Filtres</p>
+                <p class="filtre">Filtres</p>
+               <div class="ecoFam">
                 <div class="icones">
                     <div class="icone2">
                         <i class="fas fa-money-bill-wave"></i>
@@ -53,6 +57,7 @@
                     </div>
                     <button class="filtre2">Familial</button>
                 </div>
+               </div>
                 <div class="icones">
                     <div class="icone2">
                         <i class="fas fa-heart"></i>
@@ -261,8 +266,6 @@
                     <p class="footTitle">Assistance</p>
                     <a class="footerLink" href="#">Centre d'aide</a>
                     <a class="footerLink" href="#">Nous contacter</a>
-                </div>
-                <div class="footerBlank">
                 </div>
             </div>
         </footer>

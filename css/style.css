@@ -21,7 +21,6 @@ body {
 .logo {
     max-width: 75px;
     width: 100%;
-    display: flex;
 }
 
 h3 {
@@ -73,7 +72,7 @@ a:hover {
     font-weight: bolder;
 }
 
-#plein {
+.plein {
     font-weight: 100;
     color: rgb(100, 100, 100);
 }
@@ -118,7 +117,8 @@ input::placeholder {
     border-bottom-right-radius: 15px;
     border: 0px;
     max-width: 110px;
-    width: 100%;
+    min-width: 40px;
+    width: fit-content;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     cursor: pointer;
@@ -129,8 +129,16 @@ input::placeholder {
     display: flex;
 }
 
-#filtre {
+.filtre {
     font-weight: 600;
+}
+
+.showDesktop {
+    display: block;
+}
+
+.showMobile {
+    display: none;
 }
 
 .fa-money-bill-wave {
@@ -155,6 +163,10 @@ input::placeholder {
 
 .fa-star {
     color: #0065FC;
+}
+
+.ecoFam {
+    display: flex;
 }
 
 .icones {
@@ -255,8 +267,6 @@ button:focus {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    max-width: 200px;
-    width: 100%;
     height: 180px;
     box-shadow: 1px 1px 6px #555;
     padding: 4px;
@@ -264,7 +274,6 @@ button:focus {
 
 .photoMaison1 {
     margin-bottom: 0px;
-    max-width: 194px;
     width: 100%;
     height: 100px;
     border-top-left-radius: 25px;
@@ -284,6 +293,7 @@ button:focus {
     margin-left: 7px;
     margin-top: 5px;
     font-size: smaller;
+    color: rgb(65, 64, 64);
 }
 
 .note {
@@ -358,6 +368,7 @@ button:focus {
 .popPrice {
     margin-top: 3px;
     font-size: smaller;
+    color: rgb(65, 64, 64);
 }
 
 .notes2 {
@@ -540,5 +551,156 @@ footer {
 
 @media only screen and (max-width: 679px)
 {
+    .general {
+        padding: 0px;
+    }
 
+    header {
+        justify-content: center;
+    }
+
+    .navMenu {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .logo {
+        margin-top: -40px;
+    }
+
+    .navWrapper {
+        margin-top: 25px;
+    }
+
+    .recherche {
+        padding: 30px;
+    }
+
+    .showDesktop {
+        display: none;
+    }
+
+    .showMobile {
+        display: block;
+    }
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .filtre {
+        margin-left: 30px;
+   }
+
+    .icones {
+        width: fit-content;
+        margin-top: 15px;
+    }
+
+    .ecoFam {
+        margin-top: -15px;
+    }
+
+    .nombre {
+        padding: 30px;
+    }
+
+    .layer1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .layer2 {
+        margin-top: 15px;
+    }
+
+    .layer3 {
+        margin: 0px;
+        min-width: 0px;
+    }
+
+    .articles {
+        margin-top: 20px;
+    }
+
+    .houseRow {
+        flex-direction: column;
+        margin-top: -20px;
+    }
+
+    .popBox {
+        min-width: 100%;
+    }
+
+    .activites {
+        padding: 40px;
+    }
+
+    .activities {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .activi1 {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+    .vieux {
+        width: 100%;
+        height:130px;
+        max-width: none;
+    }
+
+    .activi2 {
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .pom {
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .pomImg {
+        width: 100%;
+        height: 130px;
+        max-width: none;
+    }
+
+    .acItem {
+        max-width: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .acImg {
+        max-width: none;
+        height: 130px;
+    }
+
+    .acItem3 {
+        max-width: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .acImg3 {
+        max-width: none;
+        height: 130px;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        background-color:rgb(224, 223, 223);
+    }
+
+    .footerItem {
+        width: 100%;
+    }
 }
