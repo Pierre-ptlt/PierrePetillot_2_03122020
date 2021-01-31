@@ -13,14 +13,18 @@ body {
 
 .navMenu {
     display: flex;
+    position: absolute;
     flex-direction: row; /* met le menu sur une ligne */
     align-items: center; /* place le menu au centre du header, en face du logo*/
-    justify-content: space-between;
+    top: 25px;
+    right: 100px;
 }
 
 .logo {
     max-width: 75px;
     width: 100%;
+    position: absolute;
+    top: 15px;
 }
 
 h3 {
@@ -31,6 +35,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /* met le logo à gauche et le menu à la fin */
+    position: relative;
 }
 
 .navItem {
@@ -49,11 +54,13 @@ header {
 }
 
 .inscription {
+    position: absolute;
+    right: 20px;
     color: #0065FC ;
     font-weight: 700;
     margin-left: 30px;
     padding-right: 0px;
-    order: 2;
+    top: 25px ;
 }
 
 a {
@@ -127,6 +134,11 @@ input::placeholder {
 .filtres {
     margin-top: 20px;
     display: flex;
+}
+
+.icoFiltre {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .filtre {
@@ -379,7 +391,6 @@ button:focus {
 .activites {
     display: flex;
     flex-direction: column;
-    margin-right: -10px;
     margin-top: 30px;
 }
 
@@ -387,8 +398,7 @@ button:focus {
     display: flex;
     margin-top: 15px;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-left: -15px;
+    margin: 0px -10px;
 }
 
 .activi1 {
@@ -520,7 +530,7 @@ footer {
     width: 30%;
 }
 
-@media only screen and (min-width: 689px) and (max-width: 920px)
+@media only screen and (min-width: 800px) and (max-width: 1100px)
 {
     .layer1 {
         display: flex;
@@ -549,27 +559,28 @@ footer {
 
 }
 
-@media only screen and (max-width: 679px)
+@media only screen and (max-width: 800px)
 {
     .general {
         padding: 0px;
     }
 
-    header {
+    .navMenu {
+        top: 60px;
+        right: 0;
+        left: 0;
+        align-items: center;
         justify-content: center;
     }
 
-    .navMenu {
-        flex-direction: column-reverse;
-        align-items: flex-end;
+    .navItem {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
-    .logo {
-        margin-top: -40px;
-    }
-
-    .navWrapper {
-        margin-top: 25px;
+    .navItem:hover {
+        border-bottom: #0065FC solid 2px;
+        border-top: transparent solid 2px;
     }
 
     .recherche {
@@ -595,10 +606,6 @@ footer {
     .icones {
         width: fit-content;
         margin-top: 15px;
-    }
-
-    .ecoFam {
-        margin-top: -15px;
     }
 
     .nombre {
@@ -691,6 +698,10 @@ footer {
     .acImg3 {
         max-width: none;
         height: 130px;
+    }
+
+    .acName {
+        font-size: 12px;
     }
 
     .footer-wrapper {
