@@ -287,6 +287,7 @@ button:focus {
 .photoMaison1 {
     margin-bottom: 0px;
     width: 100%;
+    max-width: 280px;
     height: 100px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -555,6 +556,70 @@ footer {
 
     .popBox {
         margin-left: 10px;
+    }
+
+    .activites {
+        padding: 40px;
+    }
+
+    .activities {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .activi1 {
+        width: 45%;
+        height: auto;
+        max-width: none;
+    }
+
+    .vieux {
+        width: 100%;
+        height:320px;
+        max-width: none;
+    }
+
+    .activi2 {
+        max-width: none;
+        width: 45%;
+        height: auto;
+    }
+
+    .pom {
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .pomImg {
+        width: 100%;
+        height: 130px;
+        max-width: none;
+    }
+
+    .acItem {
+        max-width: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .acImg {
+        max-width: none;
+        height: 130px;
+    }
+
+    .acItem3 {
+        max-width: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .acImg3 {
+        max-width: none;
+        height: 130px;
     }
 
 }
