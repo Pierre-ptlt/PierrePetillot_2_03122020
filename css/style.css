@@ -632,6 +632,10 @@ footer {
         padding: 30px;
     }
 
+    .logo {
+        left: 10px;
+    }
+
     .showDesktop {
         display: none;
     }
