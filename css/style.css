@@ -700,6 +700,10 @@ footer {
         margin-top: -20px;
     }
 
+    .photoMaison1 {
+        max-width: none;
+    }
+
     .popBox {
         min-width: 100%;
     }
