@@ -153,27 +153,7 @@ input::placeholder {
     display: none;
 }
 
-.fa-money-bill-wave {
-    color: #0065FC;
-}
-
-.fa-child {
-    color: #0065FC;
-}
-
-.fa-heart {
-    color: #0065FC;
-}
-
-.fa-dog {
-    color: #0065FC;
-}
-
-.fa-info {
-    color: #0065FC;
-}
-
-.fa-star {
+.icone-bleu {
     color: #0065FC;
 }
 
@@ -762,6 +742,7 @@ footer {
         max-width: none;
         height: auto;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .acImg3 {
